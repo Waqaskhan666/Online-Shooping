@@ -8,14 +8,51 @@
   <name>Online-shoping Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
+  
+ 
+<dependency>
+    <groupId>javax</groupId>
+    <artifactId>javaee-api</artifactId>
+    <version>8.0</version>
+    <scope>provided</scope>
+</dependency>
+  
+  
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+  
+  
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-webmvc</artifactId>
+    <version>5.0.2.RELEASE</version>
+</dependency>
+    
+    
   </dependencies>
+  
+  
+  
+  
   <build>
+  
+  <plugins>
+   <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+        <source>1.8</source>
+        <target>1.8</target>
+        
+        </configuration>
+        </plugin>
+  </plugins>
+  
+  
     <finalName>Online-shoping</finalName>
   </build>
 </project>
